@@ -1,12 +1,12 @@
 'use client'
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-export default function Page() {
+export default () => {
 
-  const [progress, setProgress] = useState(100);
+  const [progress, setProgress] = useState<number>(100);
 
   useEffect(() => {
-    let timer;
+    let timer : NodeJS.Timeout;
     if (progress > 0) {
       timer = setInterval(() => {
         setProgress(progress - 1);
