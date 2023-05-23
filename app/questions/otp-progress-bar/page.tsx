@@ -24,7 +24,7 @@ export default () => {
       <div className='container'>
         <div className="progress__bar__container bg-gray-100 shadow-md rounded-md text-gray-400 p-6 space-y-3">
           <p className='text-sm font-semibold '>{progress} Seconds</p>
-          <div className="bar__track border border-green-500 rounded-md shadow-md w-80 h-5">
+          <div className="bar__track border border-green-500 rounded-md shadow-md sm:w-80 w-full h-5">
             <div className="progress__bar bg-blue-500 rounded-md h-full" style={{ width: `${100-progress}%` }}></div>
           </div>
         </div>
